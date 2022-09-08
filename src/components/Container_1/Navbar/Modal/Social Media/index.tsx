@@ -1,16 +1,21 @@
-import { useDisclosure, Box, Button, Collapse, useBreakpointValue, Grid, GridItem, Image, Heading, Text, VStack, Flex, Link, HStack} from "@chakra-ui/react"
-import { BsInstagram } from "react-icons/bs";
-import { ImFacebook2 } from "react-icons/im";
+import { Text, Link} from "@chakra-ui/react"
+import { ReactElement } from "react";
+import { IconBaseProps } from "react-icons";
 
-import { RiWhatsappFill } from "react-icons/ri";
-import { SiLinkedin } from "react-icons/si";
 
-export function SocialMedia(media_content) {
+interface mediaProps {
+   tag?:string,
+   mediaLink:string,
+   mediaColor:string
+   icon:ReactElement
+}
+
+export function SocialMedia({mediaLink, mediaColor, icon, tag}:mediaProps) {
    return (
       <>
-         <Link href={media_content.mediaLink}  _hover={{textDecoration:'none'}}>
-               <Text color={media_content.color} _hover={{color:'datGreen', transition:'360ms'}} textAlign='center'>
-                  {media_content.icon}
+         <Link className={tag} href={mediaLink}  _hover={{textDecoration:'none'}}>
+               <Text color={mediaColor} _hover={{transition:'360ms'}} textAlign='center'>
+                  {icon}
                </Text>
          </Link>
       </>

@@ -9,10 +9,9 @@ export function Container_1() {
       
       <>
          
-         <Container id='#Home' maxW='100vw' bg='gray.500' p='0' m='0' centerContent>
+         <Container id='#Home' maxW='100vw' p='0' m='0' centerContent>
             <Navbar/>
             <Banner/>
-         {/* Grid 5 images */}
          </Container> 
       </>
    )

@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap:https://blendquimica.com.br/api/sitemap
+Sitemap:https://lindacortintas.com.br/api/sitemap

@@ -1,49 +1,55 @@
-import { Box, Flex, Heading, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, Text, useBreakpointValue, useDisclosure, VStack } from "@chakra-ui/react";
-import { GiClick } from "react-icons/gi";
+import { Box, Flex, GridItem, Heading, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+import { LineItem } from "./LineItem";
 
 export function Banner() { 
-   const { isOpen, onOpen, onClose } = useDisclosure()
-
-   const iframeHeight = useBreakpointValue({
-      base: '300px', 
-      sm: '400px', 
-      md: '500px',
-      lg: '500px',
-      xl: '500px'
+   const slides = useBreakpointValue({
+      base: 1, 
+      sm: 1, 
+      md: 1,
+      lg: 1,
+      xl: 1
    })
+
+   const lines = [
+      {id:1,image: 'static/img/banner-1.png', text:'Sensação de casa nova', subText:'Tire os planos do papel e os coloque na parede'},
+      {id:2,image: 'static/img/banner-2.png', text:'Tintas de excelente qualidade', subText:'Aqui você encontra as melhores marcas e ótimos preços!'},
+      {id:3,image: 'static/img/banner-3.png', text:'Sua casa como você imagina', subText:'Mas se não pintar nenhuma ideia, nós ajudamos você :)'},
+   ]
    return (
       <>
       
-      <Flex w='100%' fontFamily='Heebo' cursor='pointer' minH='80vh' boxShadow='lg' justifyContent='center' color='white' bgImage={['static/img/bequers.png','static/img/blend-4.gif','static/img/blend-4.gif','static/img/blend-4.gif']} bgSize='cover' onClick={onOpen}>
-         <VStack p={8} my='auto' borderRadius='lg' textShadow='1px 1px 1px #0000003a'>
+      <Flex w='100%' fontFamily='Heebo' bgImage='static/img/tinta-2c.png' bgRepeat='repeat-x' justifyContent='center' color='white' pt={8} >
+      <GridItem maxW={'100%'} mx='auto' color='gray.800'  bgColor='blackAlpha.800'>
+         <>
+         <Swiper
+            spaceBetween={0}
+            slidesPerView={slides}
+            navigation
+            autoplay
+            loop
+            // onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+         >
 
-            <Box textAlign='center'>
-               <Heading fontSize='2.4rem' fontWeight='400' mx='auto'>Indústria de cosméticos</Heading>
-               <Heading fontSize='3.2rem' color='#3b6cd5' textShadow='1px 1px 1px #000000b0' mx='auto' >BLEND QUÍMICA</Heading>
-               <Text maxW={['95%','60%','60%','60%','60%']} my={4} fontSize='1.2rem' mx='auto' textAlign='center' textShadow='1px 1px 1px #000000b0'>
-               Desenvolvemos e produzimos <b> cosméticos personalizados </b>, do seu jeito, com a <b>sua</b> marca.
-
-               </Text>
-            </Box>
-
-            <Box>
-               <Text mt={24} fontSize='0.9rem'>Clique e assista!</Text>
-               <Flex fontSize='3rem' justifyContent='center'>
-               <GiClick/>
-               </Flex>
-            </Box>
-         </VStack>
+            {lines.map( item => {
+               return (
+                  <SwiperSlide key={item.id}>
+                     <LineItem  image={item.image} text={item.text} subText={item.subText} />
+                  </SwiperSlide>
+               )
+            })}
+           
+         </Swiper>
+         <Flex w='100%' bgColor='white' color='white'>Lindacor Tintas ®</Flex>
+         </>
+      </GridItem>
       </Flex>
-      
-      <Modal finalFocusRef={null} closeOnOverlayClick={true} size='full' isOpen={isOpen} onClose={onClose}>
-         <ModalOverlay />
-         <ModalContent my={['28vh','100px','40px','40px']} backgroundColor='#00000000'>
-            <ModalCloseButton color='white' />
-            <ModalBody alignItems='center' py={12}>
-               <iframe width="100%" height={iframeHeight} src="https://www.youtube.com/embed/Khg27HTFJ-0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-            </ModalBody>
-         </ModalContent>
-      </Modal>
       </>
    )
 }
