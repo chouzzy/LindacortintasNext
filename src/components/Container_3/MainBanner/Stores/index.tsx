@@ -55,15 +55,15 @@ export function Stores() {
                   {title}
                </Text>
 
-               <SimpleGrid columns={2} gap={[2,2,4,8]} p={8} fontSize='1.5rem'>
+               <SimpleGrid columns={2}  p={8} fontSize='1.5rem'>
                   <Link href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
-                     <Button w={64} p={6} fontWeight='400' fontSize='1.4rem' bgColor='yellow.500' color='gray.50'>
+                     <Button w={[36,36,36,64]} p={8} fontWeight='400' fontSize='1.4rem' bgColor='#ffc107' color='gray.50'>
                         Ligue agora!
                      </Button>
                   </Link>
 
                   <Link className='zap-tag' href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
-                     <Button w={64} p={6} fontWeight='400' fontSize='1.4rem' bgColor='green.500' color='gray.50'>
+                     <Button w={[36,36,36,64]} p={8} fontWeight='400' fontSize='1.4rem' bgColor='green.500' color='gray.50'>
                         Whatsapp
                      </Button>
                   </Link>

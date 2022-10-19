@@ -40,6 +40,14 @@ export function Container_4() {
       about_2:'A Lindacor Tintas foi fundada em 1996, em Ribeirão Preto, com a missão de atender com excelência e cuidado os clientes da região. O foco sempre foi o atendimento e qualidade dos produtos, o que proporcionou a inauguração da segunda loja na cidade, em 2009. A capacitação das equipes é prioridade e constante, tal qual a parceria com fornecedores, que desenvolvem linhas de produtos com as mais novas tecnologias.',
    }
 
+   const animationSize = useBreakpointValue({
+      base: 240, 
+      sm: 240, 
+      md: 240,
+      lg: 360,
+      xl: 360
+   })
+
    return (
       <>
       
@@ -56,8 +64,8 @@ export function Container_4() {
          <Flex w='100%' my='auto'> 
             <Lottie
                options={defaultOptions}
-               height={360}
-               width={360}
+               height={animationSize}
+               width={animationSize}
             />
          </Flex>
          
@@ -71,15 +79,15 @@ export function Container_4() {
             </VStack>
          </Flex>
       </Grid>
-      <Flex w='100%' justify='center' flexDir={['column','column','row', 'row']} gap={2} my={12} >
+      <Flex w='100%' justify='center' textAlign='center' flexDir={['column','column','row', 'row']} gap={2} my={12} >
          <Link href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
-            <Button w={64} p={6} fontWeight='400' fontSize='1.4rem' bgColor='yellow.500' color='gray.50'>
+            <Button w={64} p={8} fontWeight='400' fontSize='1.4rem' bgColor='#ffc107' color='gray.50'>
                Ligue agora!
             </Button>
          </Link>
 
          <Link className='zap-tag' href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
-            <Button w={64} p={6} fontWeight='400' fontSize='1.4rem' bgColor='green.500' color='gray.50'>
+            <Button w={64} p={8} fontWeight='400' fontSize='1.4rem' bgColor='green.500' color='gray.50'>
                Whatsapp
             </Button>
          </Link>
