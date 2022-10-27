@@ -72,7 +72,7 @@ export function Stores() {
             </GridItem>
 
             <GridItem colSpan={[12,12,6,6]} color='gray.600'>
-               <Image border={['2px solid #147aa9','2px solid #147aa9','2px solid #147aa9','3px solid #d1d3d4']} borderRadius={2} boxShadow={'xl'} mx='auto' maxW={['100%','100%','90%','90%']} src='static/img/fachada2.jpg'/>
+               <Image border={['2px solid #147aa9','2px solid #147aa9','2px solid #147aa9','3px solid #d1d3d4']} borderRadius={2} boxShadow={'xl'} mx='auto' maxW={['100%','100%','90%','90%']} src='static/img/parceiros-logo/fachada-banner.JPG'/>
             </GridItem>
          </Grid>
          
