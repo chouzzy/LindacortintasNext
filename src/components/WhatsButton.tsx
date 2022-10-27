@@ -1,5 +1,4 @@
 import { Flex, Link, Text } from "@chakra-ui/react";
-import { WhatsappLogo } from "phosphor-react";
 import { BsWhatsapp } from "react-icons/bs";
 import { RiWhatsappFill } from "react-icons/ri";
 
