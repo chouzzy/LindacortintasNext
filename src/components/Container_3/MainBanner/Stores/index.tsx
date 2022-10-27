@@ -1,4 +1,4 @@
-import { Button, Flex, Grid, GridItem, Image, Link, SimpleGrid, Text, useDisclosure, VStack } from "@chakra-ui/react";
+import { Button, Flex, Grid, GridItem, HStack, Image, Link, SimpleGrid, Text, useDisclosure, VStack } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { ModalProjectTypes } from "./ModalProjectTypes";
 
@@ -41,38 +41,38 @@ export function Stores() {
    }
 
    return (
-      <GridItem colSpan={12} w='100%'  p={[2,4,8,4]} my={[8,8,2,6]}>
+      <GridItem id='#orçamento' colSpan={12} w='100%' p={[2,4,8,2]} bgImage='static/img/wallpainted3.png' bgPosition={['left','left','left','center']} bgSize='cover' bgRepeat='no-repeat'>
 
-         <Grid templateColumns='repeat(12, 1fr)' gap={[0,6,6,0]} pl={[0,0,0,0,0]} color='datBlue' fontWeight='500' alignItems='center'>
+         <Grid templateColumns='repeat(12, 1fr)' h='100%' gap={[6,6,6,0]} pl={[0,0,0,0,0]} mt={2} p={4} color='datBlue' fontWeight='500' alignItems='center'>
 
-            <GridItem textAlign={['center','center','left','left']} colSpan={[12,12,6,6]} >
+            <GridItem textAlign={['center','center','left','left']} colSpan={[12,12,6,6]}>
                <Text
                  fontSize={['3rem','3.2rem','3.8rem','4.8rem']}
-                 color='white'
+                 color='gray.800'
                  fontWeight='300'
                  textAlign='center'
                >
                   {title}
                </Text>
 
-               <SimpleGrid columns={2}  p={8} fontSize='1.5rem'>
+               <HStack w='100%' spacing={16} justifyContent='center'>
                   <Link href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
-                     <Button w={[36,36,36,64]} p={8} fontWeight='400' fontSize='1.4rem' bgColor='#ffc107' color='gray.50'>
+                     <Button w={[28,36,36,56]} p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='#ffc107' color='gray.50'>
                         Ligue agora!
                      </Button>
                   </Link>
 
                   <Link className='zap-tag' href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
-                     <Button w={[36,36,36,64]} p={8} fontWeight='400' fontSize='1.4rem' bgColor='green.500' color='gray.50'>
+                     <Button w={[24,36,36,56]} p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='green.500' color='gray.50'>
                         Whatsapp
                      </Button>
                   </Link>
-               </SimpleGrid>
+               </HStack>
                
             </GridItem>
 
             <GridItem colSpan={[12,12,6,6]} color='gray.600'>
-               <Image mx='auto'  src='static/img/lindacor-logo-2.png' maxW={[270, 360, 400,440]}/>
+               <Image border={['2px solid #147aa9','2px solid #147aa9','2px solid #147aa9','3px solid #d1d3d4']} borderRadius={2} boxShadow={'xl'} mx='auto' maxW={['100%','100%','90%','90%']} src='static/img/fachada2.jpg'/>
             </GridItem>
          </Grid>
          

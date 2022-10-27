@@ -5,8 +5,8 @@ import { Stores } from "./Stores";
 export function MainBanner() { 
 
    return (
-      <Grid templateColumns='repeat(12,1fr)'color='gray.600'  >
-         <Stores/>
+      <Grid w='100%' templateColumns='repeat(12,1fr)'color='gray.600'  >
+         
          <Budget/>
       </Grid>
    )

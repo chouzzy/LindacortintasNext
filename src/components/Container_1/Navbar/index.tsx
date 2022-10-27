@@ -59,7 +59,7 @@ export function Navbar() {
          >
 
          <GridItem mr={['auto','','','','auto']} ml={[4,4,'',5,5]} colStart={[0,0,1,1,1]} colEnd={[0,0,3,3,3]}>
-            <Image mx='auto' src='static/img/lindacor-logo-2.png' maxW={52} alt='Logo Blendquimica'/>
+            <Image mx='auto' src='static/img/lindacor-logo-2.png' maxW={52} alt='Logo da LindacorTintas'/>
          </GridItem>
 
          {isMobile?

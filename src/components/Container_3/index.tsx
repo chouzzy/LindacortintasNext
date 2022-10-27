@@ -6,7 +6,7 @@ import {MainBanner  } from "./MainBanner";
 export function Container_3() {
 
    return (
-      <Container id='#orçamento' maxW='100vw'
+      <Container maxW='100vw'
       bgGradient={'linear(300deg, #fc06069c, #323c64)'} p='0' m='0' centerContent>
          <MainBanner/>
       </Container> 

@@ -24,7 +24,7 @@ export function Banner() {
    return (
       <>
       
-      <Flex w='100%' fontFamily='Heebo' bgImage='static/img/tinta-2c.png' bgRepeat='repeat-x' justifyContent='center' color='white' pt={8} >
+      <Flex w='100%' fontFamily='Heebo' justifyContent='center' color='white' pt='2' >
       <GridItem maxW={'100%'} mx='auto' color='gray.800'  bgColor='blackAlpha.800'>
          <>
          <Swiper
