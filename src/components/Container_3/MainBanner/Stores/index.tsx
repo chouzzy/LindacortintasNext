@@ -57,13 +57,13 @@ export function Stores() {
 
                <HStack w='100%' spacing={16} justifyContent='center'>
                   <Link href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
-                     <Button w={[28,36,36,56]} p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='#ffc107' color='gray.50'>
+                     <Button w={[28,36,36,56]} className='liga-tag' p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='#ffc107' color='gray.50'>
                         Ligue agora!
                      </Button>
                   </Link>
 
                   <Link className='zap-tag' href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
-                     <Button w={[24,36,36,56]} p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='green.500' color='gray.50'>
+                     <Button w={[24,36,36,56]} className='zap-tag' p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='green.500' color='gray.50'>
                         Whatsapp
                      </Button>
                   </Link>

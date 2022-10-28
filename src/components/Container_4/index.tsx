@@ -80,14 +80,14 @@ export function Container_4() {
          </Flex>
       </Grid>
       <Flex w='100%' justify='center' textAlign='center' flexDir={['column','column','row', 'row']} gap={2} my={12} >
-         <Link href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
+         <Link className="liga-tag" href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
             <Button w={64} p={8} fontWeight='400' fontSize='1.4rem' bgColor='#ffc107' color='gray.50'>
                Ligue agora!
             </Button>
          </Link>
 
-         <Link className='zap-tag' href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
-            <Button w={64} p={8} fontWeight='400' fontSize='1.4rem' bgColor='green.500' color='gray.50'>
+         <Link  href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
+            <Button className='zap-tag' w={64} p={8} fontWeight='400' fontSize='1.4rem' bgColor='green.500' color='gray.50'>
                Whatsapp
             </Button>
          </Link>

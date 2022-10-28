@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, HStack, Text, VStack } from "@chakra-ui/react";
+import { Flex, Grid, Link, GridItem, HStack, Text, VStack } from "@chakra-ui/react";
 import { ReactComponentElement, ReactElement } from "react";
 import { MdCall } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
@@ -28,8 +28,8 @@ export function Maps({address, source, telefone, whatsapp_1, whatsapp_2}:MapsPro
                <Flex w='100%' justify='center'>
                   <VStack>
                   <RiWhatsappFill fontSize='2rem' color='#25D366'/>
-                  <HStack w='100%' justify='center'> <Text> {whatsapp_1} </Text> </HStack>
-                  <HStack w='100%' justify='center'> <Text> {whatsapp_2} </Text> </HStack>
+                  <HStack w='100%' justify='center'> <Link href={`https://wa.me/${whatsapp_1}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_1} </Text> </Link> </HStack>
+                  <HStack w='100%' justify='center'> <Link href={`https://wa.me/${whatsapp_2}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_2} </Text> </Link> </HStack>
                   </VStack>
                </Flex>
             </Flex>
