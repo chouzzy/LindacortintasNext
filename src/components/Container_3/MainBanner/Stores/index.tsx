@@ -56,7 +56,7 @@ export function Stores() {
                </Text>
 
                <HStack w='100%' spacing={16} justifyContent='center'>
-                  <Link href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
+                  <Link className='liga-tag' href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
                      <Button w={[28,36,36,56]} className='liga-tag' p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='#ffc107' color='gray.50'>
                         Ligue agora!
                      </Button>
