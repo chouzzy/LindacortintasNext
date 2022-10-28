@@ -5,7 +5,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 export default function WhatsButton() {
     return (
-        <Link href='https://wa.me/11912304030?text=Olá, tudo bem? Acessei o site do Clube do Passaporte e gostaria de falar com um atendente.`}' target="_blank">
+        <Link href="https://wa.me/5516997093759?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente." target="_blank">
         
         <Flex bg='#25D366' color="#fffafa"
         fontSize='1.8rem' borderRadius={'full'} p={4} 
