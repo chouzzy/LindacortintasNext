@@ -10,24 +10,54 @@ import Script from 'next/script'
 import { pageView } from 'react-facebook-pixel'
 // import Fonts from './Fonts'
 
-function FacebookPixel() {
-   const router = useRouter()
-   useEffect(() => {
-     import("react-facebook-pixel")
-       .then((x) => x.default)
-       .then((ReactPixel) => {
-         ReactPixel.init('497161601860940');
-         ReactPixel.pageView();
+
+const FB_PIXEL_ID = '497161601860940'
+// function FacebookPixel() {
+//    const router = useRouter()
+//    useEffect(() => {
+//      import("react-facebook-pixel")
+//        .then((x) => x.default)
+//        .then((ReactPixel) => {
+//          ReactPixel.init('497161601860940');
+//          ReactPixel.pageView();
  
-         router.events.on("routeChangeComplete", () => {
-           ReactPixel.pageView();
-         });
-       });
-   });
-   return null;
- }
+//          router.events.on("routeChangeComplete", () => {
+//            ReactPixel.pageView();
+//          });
+//        });
+//    });
+//    return (
+//             <Script id="facebook-pixel">
+//               {`
+//                 !function(f,b,e,v,n,t,s)
+//                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+//                 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+//                 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+//                 n.queue=[];t=b.createElement(e);t.async=!0;
+//                 t.src=v;s=b.getElementsByTagName(e)[0];
+//                 s.parentNode.insertBefore(t,s)}(window, document,'script',
+//                 'https://connect.facebook.net/en_US/fbevents.js');
+//                 fbq('init', '497161601860940');
+//                 fbq('track', 'PageView');
+//               `}
+//             </Script>
+//           );
+//  }
 
 function MyApp({Component, pageProps}: AppProps) {
+   const router = useRouter()
+   useEffect(() => {
+      import('react-facebook-pixel')
+        .then((x) => x.default)
+        .then((ReactPixel) => {
+          ReactPixel.init(`${FB_PIXEL_ID}`)
+          ReactPixel.pageView()
+  
+          router.events.on('routeChangeComplete', () => {
+            ReactPixel.pageView()
+          })
+        })
+    }, [router.events])
 
    // const router = useRouter()
 
@@ -48,7 +78,7 @@ function MyApp({Component, pageProps}: AppProps) {
 //       pageView()
 //     }
     
-//    const FB_PIXEL_ID = 497161601860940
+
 
 //    const FacebookPixel = ({ children }) => {
 //       const router = useRouter()
@@ -81,7 +111,8 @@ function MyApp({Component, pageProps}: AppProps) {
    return (
       
       <>    
-         <FacebookPixel/>
+         {/* <!-- Meta Facebook --> */}
+         {/* <!-- Google Tag Manager --> */}
          <Script id="google-tag-manager" strategy="afterInteractive">
             {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
