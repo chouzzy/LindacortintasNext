@@ -7,6 +7,26 @@ export default class MyDocument extends Document {
       return (
          <Html>
          <Head>
+         {/* <!-- HTML Meta Tags --> */}
+         <meta name="description" content="Colorindo o mundo com nossa cor!"/>
+          <meta name="keywords" content="venda, revenda, Venda, Revenda, tintas, lindacor, lindacor tintas, tinta, lata de tinta, pintura, pincel, pintar"/>
+
+         {/* <!-- Facebook Meta Tags --> */}
+         <meta property="og:url" content="https://www.lindacortintas.com.br/"/>
+         <meta property="og:type" content="website"/>
+         <meta property="og:title" content="Lindacor Tintas - Colorindo o mundo com nossa cor!"/>
+         <meta property="og:description" content="Colorindo o mundo com nossa cor!"/>
+         <meta property="og:image" content="https://www.lindacortintas.com.br/static/img/lindacor-logo-2.png"/>
+
+         {/* <!-- Twitter Meta Tags --> */}
+         <meta name="twitter:card" content="summary_large_image"/>
+         <meta property="twitter:domain" content="lindacortintas.com.br"/>
+         <meta property="twitter:url" content="https://www.lindacortintas.com.br//"/>
+         <meta name="twitter:title" content="Lindacor Tintas - Colorindo o mundo com nossa cor!"/>
+         <meta name="twitter:description" content="Colorindo o mundo com nossa cor!"/>
+         <meta name="twitter:image" content="https://www.lindacortintas.com.br/static/img/lindacor-logo-2.png"/>
+
+
          <link rel="preconnect" href="https://fonts.googleapis.com"/>
          <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"/>
          <link rel="shortcut icon" href="/static/img/logo icon.png" />
