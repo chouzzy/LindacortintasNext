@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
       return (
          <Html>
          <Head>
+         <meta name="description" content="Na Lindacor Tintas, nós trabalhos com as melhores marcas e com preços melhores preços! Solicite já seu orçamento!"></meta>
          {/* <!-- HTML Meta Tags --> */}
          <meta name="description" content="Colorindo o mundo com nossa cor!"/>
           <meta name="keywords" content="venda, revenda, Venda, Revenda, tintas, lindacor, lindacor tintas, tinta, lata de tinta, pintura, pincel, pintar"/>
