@@ -4,9 +4,10 @@ interface LineItemProps {
    LineImage:string,
    LineName:string,
    columns:number[],
+   alt:string
 }
 
-export function LineItem({LineImage, LineName, columns}:LineItemProps) { 
+export function LineItem({LineImage, LineName, columns, alt}:LineItemProps) { 
 
    const quemSomos = {
       title_1:'Quem somos',
@@ -16,7 +17,7 @@ export function LineItem({LineImage, LineName, columns}:LineItemProps) {
    }
 
    return (
-            <GridItem colSpan={columns} mx='auto' borderRadius={12} w='100%' boxShadow='2xl' minW={60} bgImage={LineImage} bgSize='cover' minH={40} bgPosition='center' position='relative'>
+            <GridItem colSpan={columns} mx='auto' borderRadius={12} w='100%' boxShadow='2xl' minW={60} bgImage={LineImage} bgSize='cover' minH={40} bgPosition='center' position='relative' >
                <Text bg='white' position='absolute' maxW={60} left='0' right='0' margin='auto' bottom='2' borderRadius={12} fontSize='1.2rem'>
                   {LineName}
                </Text>

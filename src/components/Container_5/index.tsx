@@ -7,11 +7,11 @@ export function Container_5() {
 
 
    const lines = [
-      {image:'static/img/home.png', name:'Linha imobiliária', cols:[6,3,3,2]},
-      {image:'static/img/industry.png', name:'Linha industrial', cols:[6,3,3,2]},
-      {image:'static/img/can.png', name:'Solventes', cols:[6,3,3,2]},
-      {image:'static/img/waterproof.png', name:'Impermeabilizantes', cols:[6,3,3,3]},
-      {image:'static/img/paint-rollers.png', name:'Acessórios para pinturas', cols:[6,6,6,3]},
+      {image:'static/img/home.png', name:'Linha imobiliária', alt:'Linha imobiliária', cols:[6,3,3,2]},
+      {image:'static/img/industry.png', name:'Linha industrial', alt:'Linha industrial', cols:[6,3,3,2]},
+      {image:'static/img/can.png', name:'Solventes', alt:'Solventes', cols:[6,3,3,2]},
+      {image:'static/img/waterproof.png', name:'Impermeabilizantes', alt:'Impermeabilizantes', cols:[6,3,3,3]},
+      {image:'static/img/paint-rollers.png', name:'Acessórios para pinturas', alt:'Acessórios para pinturas', cols:[6,6,6,3]},
    ]
 
    return (
@@ -37,7 +37,7 @@ export function Container_5() {
          >
             {lines.map( item => {
                return (
-                  <LineItem key={item.name} LineImage={item.image} LineName={item.name} columns={item.cols}/>
+                  <LineItem key={item.name} LineImage={item.image} alt={item.alt} LineName={item.name} columns={item.cols}/>
                )
             })}
          </SimpleGrid>

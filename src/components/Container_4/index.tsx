@@ -71,7 +71,7 @@ export function Container_4() {
          
          <Flex minW='60vw'> 
             <VStack color='gray.600' gap={4} p={6} >
-               <Image src='static/img/lindacor-logo-2.png' maxW={260} my={4}/>
+               <Image src='static/img/lindacor-logo-2.png' maxW={260} my={4} alt='Logo da Lindacor Tintas'/>
                <Heading fontSize={['1.5rem','1.4rem','1.4rem','1.4rem']} fontWeight='500' textAlign='center'>{quemSomos.title_1}</Heading>
                <Text fontWeight='400'>{quemSomos.about_1}</Text>
                <Heading fontSize={['1.5rem','1.4rem','1.4rem','1.4rem']} fontWeight='500' textAlign='center'>{quemSomos.title_2}</Heading>

@@ -6,7 +6,6 @@ export function MainBanner() {
 
    return (
       <Grid w='100%' templateColumns='repeat(12,1fr)'color='gray.600'  >
-         
          <Budget/>
       </Grid>
    )
