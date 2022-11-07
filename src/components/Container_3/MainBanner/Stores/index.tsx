@@ -72,7 +72,7 @@ export function Stores() {
             </GridItem>
 
             <GridItem colSpan={[12,12,6,6]} color='gray.600'>
-               <Image border={['2px solid #147aa9','2px solid #147aa9','2px solid #147aa9','3px solid #d1d3d4']} borderRadius={2} boxShadow={'xl'} mx='auto' maxW={['100%','100%','90%','90%']} src='static/img/parceiros-logo/fachada-banner.JPG' alt='Foto da fachada loja da Lindacor Tintas' />
+               <Image border={['2px solid #147aa9','2px solid #147aa9','2px solid #147aa9','3px solid #d1d3d4']} borderRadius={2} boxShadow={'xl'} mx='auto' maxW={['100%','100%','90%','90%']} src='static/img/fachada2.jpeg' alt='Foto da fachada loja da Lindacor Tintas' />
             </GridItem>
          </Grid>
          
