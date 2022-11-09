@@ -62,7 +62,7 @@ export function Stores() {
                         <Flex w='100%' justifyContent={'center'}>
                            <Link className='liga-tag' href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
                               <Button _hover={{bgColor:'#323c64'}} className='liga-tag' p={6} fontWeight='400' borderRadius={3} w={[80,72,72,64]} fontSize={['1.4rem','1.2rem','1.2rem','1.4rem']} bgColor='#ffc107' color='gray.50'>
-                                 Ligue Agora!
+                                 LIGUE AGORA!
                               </Button>
                            </Link>
                         </Flex>
@@ -70,7 +70,7 @@ export function Stores() {
                         <Flex w='100%' justifyContent={'center'}>
                            <Link className='zap-tag' href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
                               <Button _hover={{bgColor:'#323c64'}} className='zap-tag' p={6} fontWeight='400' borderRadius={3} w={[80,72,72,64]} fontSize={['1.4rem','1.2rem','1.2rem','1.4rem']} bgColor='green.500' color='gray.50'>
-                                 WhatsApp
+                                 WHATSAPP
                               </Button>
                            </Link>
                         </Flex>
