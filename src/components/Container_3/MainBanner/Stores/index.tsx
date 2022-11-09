@@ -41,15 +41,15 @@ export function Stores() {
    }
 
    return (
-      <GridItem id='#orçamento' colSpan={12} w='100%' h='100%' p={[2,4,8,8]} bgSize='initial' bgRepeat={'repeat-x'}  bgPosition={'top'} bgColor='white' bgImage='static/img/roll.png'>
+      <GridItem id='#orçamento' colSpan={12} w='100%' h='100%' p={[1,4,8,8]} bgSize='initial' bgRepeat={'repeat-x'}  bgPosition={'top'} bgColor='white' bgImage='static/img/roll.png'>
 
-         <Grid templateColumns='repeat(12, 1fr)' h='100%' mb={8} mt={['20%',0,0,8]} gap={[8,6,6,8]}  color='datBlue' fontWeight='500' alignItems='center'>
+         <Grid templateColumns='repeat(12, 1fr)' h='100%' maxW='100vw' mb={8} mt={['20%',0,0,8]} gap={[8,6,6,8]}  color='datBlue' fontWeight='500' alignItems='center'>
 
             <GridItem h='100%' textAlign={['center','center','left','left']} colSpan={[12,12,6,6]}>
                <Flex h='100%' alignItems={'center'}>
                   <Flex flexDir={'column'} gap={8}>
                      <Text
-                     fontSize={['3.4rem','3.2rem','3.8rem','4.8rem']}
+                     fontSize={['3.3rem','3.2rem','3.8rem','4.8rem']}
                      color='lindacorBlue'
                      fontWeight='500'
                      textAlign='center'
@@ -80,8 +80,8 @@ export function Stores() {
                </Flex> 
             </GridItem>
 
-            <GridItem boxShadow={'md'} colSpan={[12,12,6,6]} color='gray.600'>
-               <Image src='static/img/fachada3.jpeg' alt='Foto da fachada loja da Lindacor Tintas' />
+            <GridItem boxShadow={'md'} colSpan={[12,12,6,6]}color='gray.600'>
+               <Image src='static/img/fachada3.jpeg' w='100%' alt='Foto da fachada loja da Lindacor Tintas' />
             </GridItem>
          </Grid>
          
