@@ -37,7 +37,7 @@ export function Container_4() {
       title_1:'Quem somos',
       about_1:'A Lindacor Tintas foi fundada em 1996, em Ribeirão Preto, com a missão de atender com excelência e cuidado os clientes da região. O foco sempre foi o atendimento e qualidade dos produtos, o que proporcionou a inauguração da segunda loja na cidade, em 2009. A capacitação das equipes é prioridade e constante, tal qual a parceria com fornecedores, que desenvolvem linhas de produtos com as mais novas tecnologias.',
       title_2:'A Lindacor Tintas é associada ao grupo Coopertintas',
-      about_2:'A Lindacor Tintas foi fundada em 1996, em Ribeirão Preto, com a missão de atender com excelência e cuidado os clientes da região. O foco sempre foi o atendimento e qualidade dos produtos, o que proporcionou a inauguração da segunda loja na cidade, em 2009. A capacitação das equipes é prioridade e constante, tal qual a parceria com fornecedores, que desenvolvem linhas de produtos com as mais novas tecnologias.',
+      about_2:'A Coopertintas, foi fundada no dia 30 de maio de 2012, é a união de empresas de varejo do segmento de tintas de Ribeirão Preto e região. Possui como foco estratégico: unir para poder crescer, aumento de competitividade e excelência em qualidade. A Coopertintas tem sua linha própria de produtos.',
    }
 
    const animationSize = useBreakpointValue({
