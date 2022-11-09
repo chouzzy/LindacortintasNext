@@ -9,7 +9,7 @@ const partnerLines = [
    {image:'static/img/parceiros-logo/montana.png', cols:[4,2,1,1], size:'80%'},
    {image:'static/img/parceiros-logo/sayerlack.png', cols:[4,2,1,1], size:'72%'},
    {image:'static/img/parceiros-logo/vedacit.png', cols:[4,2,1,1], size:'100%'},
-   {image:'static/img/parceiros-logo/tintas-construir.png', cols:[4,2,1,1], size:'100%'},
+   {image:'static/img/parceiros-logo/construir.png', cols:[4,2,1,1], size:'100%'},
    {image:'static/img/parceiros-logo/suvinil2.png', cols:[4,2,2,2], size:'70%', height:['200px','180px','180px','220px']},
    {image:'static/img/parceiros-logo/sherwin-williams.png', cols:[4,2,2,2], size:'100%', height:['200px','180px','180px','220px']},
 ]
