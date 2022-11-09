@@ -47,8 +47,9 @@ export function Navbar() {
          <Grid
             p={4}
             position='relative'
-            bg='white'
-            boxShadow='xl'
+            bg='none'
+            borderBottom='1px solid #00000010'
+            boxShadow={'sm'}
             templateColumns={['','','','repeat(12,1fr)','repeat(12,1fr)']}
             w='100%'
             fontFamily='Heebo'

@@ -41,38 +41,47 @@ export function Stores() {
    }
 
    return (
-      <GridItem id='#orçamento' colSpan={12} w='100%' p={[2,4,8,2]} bgImage='static/img/wallpainted3.png' bgPosition={['left','left','left','center']} bgSize='cover' bgRepeat='no-repeat'>
+      <GridItem id='#orçamento' colSpan={12} w='100%' h='100%' p={[2,4,8,8]} bgSize='initial' bgRepeat={'repeat-x'}  bgPosition={'top'} bgColor='white' bgImage='static/img/roll.png'>
 
-         <Grid templateColumns='repeat(12, 1fr)' h='100%' gap={[6,6,6,0]} pl={[0,0,0,0,0]} mt={2} p={4} color='datBlue' fontWeight='500' alignItems='center'>
+         <Grid templateColumns='repeat(12, 1fr)' h='100%' mb={8} mt={['20%',0,0,8]} gap={[8,6,6,8]}  color='datBlue' fontWeight='500' alignItems='center'>
 
-            <GridItem textAlign={['center','center','left','left']} colSpan={[12,12,6,6]}>
-               <Text
-                 fontSize={['3rem','3.2rem','3.8rem','4.8rem']}
-                 color='gray.800'
-                 fontWeight='300'
-                 textAlign='center'
-               >
-                  {title}
-               </Text>
+            <GridItem h='100%' textAlign={['center','center','left','left']} colSpan={[12,12,6,6]}>
+               <Flex h='100%' alignItems={'center'}>
+                  <Flex flexDir={'column'} gap={8}>
+                     <Text
+                     fontSize={['3.4rem','3.2rem','3.8rem','4.8rem']}
+                     color='lindacorBlue'
+                     fontWeight='500'
+                     textAlign='center'
+                     >
+                        {title}
+                     </Text>
 
-               <HStack w='100%' spacing={16} justifyContent='center'>
-                  <Link className='liga-tag' href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
-                     <Button w={[28,36,36,56]} className='liga-tag' p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='#ffc107' color='gray.50'>
-                        Ligue agora!
-                     </Button>
-                  </Link>
+                     <Flex flexDir={['column','row','row','row']} w='100%' gap={[4,0,0,0]}>
+                        
+                        <Flex w='100%' justifyContent={'center'}>
+                           <Link className='liga-tag' href={socialMediaLinks.telefone} _hover={{textDecoration: 'none'}}>
+                              <Button _hover={{bgColor:'#323c64'}} className='liga-tag' p={6} fontWeight='400' borderRadius={3} w={[80,72,72,64]} fontSize={['1.4rem','1.2rem','1.2rem','1.4rem']} bgColor='#ffc107' color='gray.50'>
+                                 Ligue Agora!
+                              </Button>
+                           </Link>
+                        </Flex>
 
-                  <Link className='zap-tag' href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
-                     <Button w={[24,36,36,56]} className='zap-tag' p={6} fontWeight='400' fontSize={['1.1rem','1.2rem','1.2rem','1.4rem']} bgColor='green.500' color='gray.50'>
-                        Whatsapp
-                     </Button>
-                  </Link>
-               </HStack>
-               
+                        <Flex w='100%' justifyContent={'center'}>
+                           <Link className='zap-tag' href={socialMediaLinks.whatsapp}  _hover={{textDecoration: 'none'}}>
+                              <Button _hover={{bgColor:'#323c64'}} className='zap-tag' p={6} fontWeight='400' borderRadius={3} w={[80,72,72,64]} fontSize={['1.4rem','1.2rem','1.2rem','1.4rem']} bgColor='green.500' color='gray.50'>
+                                 WhatsApp
+                              </Button>
+                           </Link>
+                        </Flex>
+
+                     </Flex> 
+                  </Flex>
+               </Flex> 
             </GridItem>
 
-            <GridItem colSpan={[12,12,6,6]} color='gray.600'>
-               <Image border={['2px solid #147aa9','2px solid #147aa9','2px solid #147aa9','3px solid #d1d3d4']} borderRadius={2} boxShadow={'xl'} mx='auto' maxW={['100%','100%','90%','90%']} src='static/img/fachada2.jpeg' alt='Foto da fachada loja da Lindacor Tintas' />
+            <GridItem boxShadow={'md'} colSpan={[12,12,6,6]} color='gray.600'>
+               <Image src='static/img/fachada3.jpeg' alt='Foto da fachada loja da Lindacor Tintas' />
             </GridItem>
          </Grid>
          
