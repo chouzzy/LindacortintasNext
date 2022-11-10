@@ -26,7 +26,7 @@ export function Container_6() {
       facebook:'https://www.facebook.com/Lindacor-Tintas-104622232176385',
       linkedin:'https://www.linkedin.com/company/lindacor-tintas/',
       whatsapp:`https://wa.me/${whatsNumber}?text=Olá, tudo bem? Acessei o site da Lindacor e gostaria de falar com um atendente.`,
-      telefone:`tel:+1636372108`
+      telefone:`tel:+551636372108`
    }
 
    return (
