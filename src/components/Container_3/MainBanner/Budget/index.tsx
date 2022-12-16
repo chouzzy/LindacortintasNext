@@ -40,7 +40,9 @@ export function Budget() {
             source={divMaps.store_2.source}
             telefone={divMaps.store_2.telefone} 
             telefoneNumber={divMaps.store_2.telefoneNumber} 
-            whatsapp_1={divMaps.store_2.whatsapp_1} />
+            whatsapp_1={divMaps.store_2.whatsapp_1}
+            whatsapp_2={divMaps.store_2.whatsapp_2} 
+               />
          </Grid>
          
       </GridItem>
