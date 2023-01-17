@@ -35,7 +35,7 @@ export function Maps({address, source, telefone, telefoneNumber, whatsapp_1, wha
                <Flex w='100%' justify='center'>
                   <VStack>
                   <RiWhatsappFill fontSize='2rem' color='#25D366'/>
-                     {whatsapp_1=='(16) 99609-2935'?
+                     {whatsapp_1=='(16) 99709-2489'?
                         <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_1}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_1} </Text> </Link> </HStack>
                        :   
                         ""   
