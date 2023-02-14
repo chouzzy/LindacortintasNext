@@ -35,8 +35,17 @@ export function Maps({address, source, telefone, telefoneNumber, whatsapp_1, wha
                <Flex w='100%' justify='center'>
                   <VStack>
                   <RiWhatsappFill fontSize='2rem' color='#25D366'/>
+                     { whatsapp_1 == '0'?
+                      ""
+                      :
                      <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_1}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_1} </Text> </Link> </HStack>
+                     }
                      <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_2}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_2} </Text> </Link> </HStack>
+                     { whatsapp_3?
+                     <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_3}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_3} </Text> </Link> </HStack>
+                        :
+                     ""
+                     }
                   </VStack>
                </Flex>
             </Flex>
