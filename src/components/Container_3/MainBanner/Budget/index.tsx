@@ -27,7 +27,7 @@ export function Budget() {
       <GridItem colSpan={12} w='100%'  p={[2,4,8,4]} mx='auto' mb={16}>
 
          <Heading mx='auto' w='100%' textAlign='center' color='white' fontWeight='400' p={4}>CONHEÇA NOSSAS LOJAS</Heading>
-         <Grid templateColumns='repeat(12, 1fr)' gap={6} color='datBlue' fontWeight='500' alignItems='center'>
+         <Grid templateColumns='repeat(12, 1fr)' gap={6} color='datBlue' fontWeight='500' alignItems={'flex-start'}>
             <Maps 
             address={divMaps.store_1.address} 
             source={divMaps.store_1.source}
