@@ -19,7 +19,7 @@ export default function WhatsButton() {
    }, [])
     
     return (
-        <Link className="zap-tag" href=`https://wa.me/${whatsNumber}?text=Olá, tudo bem? Acessei o site da Lindacor e gostaria de falar com um atendente.`>
+        <Link className="zap-tag" href={`https://wa.me/${whatsNumber}?text=Olá, tudo bem? Acessei o site da Lindacor e gostaria de falar com um atendente.`}>
         
         <Flex zIndex={1} bg='#25D366' color="#fffafa"
         fontSize='1.8rem' borderRadius={'full'} p={4} 
