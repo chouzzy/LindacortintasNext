@@ -7,7 +7,7 @@ const divMaps = {
       source:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.1360076815504!2d-47.829504085064634!3d-21.186755385913038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be9217877245%3A0xe17f0f64c1fbd07e!2sR.%20Dr.%20Jo%C3%A3o%20Gui%C3%A3o%2C%201056%20-%20Vila%20Virginia%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014030-440!5e0!3m2!1spt-BR!2sbr!4v1648817469914!5m2!1spt-BR!2sbr",
       telefone:'(16) 3637-2108',
       telefoneNumber:'tel:+551636372108',
-      whatsapp_1:'(16) 99609-2935',
+      whatsapp_1:'0',
       whatsapp_2:'(16) 99709-3759'
    },
    store_2:{
@@ -16,7 +16,8 @@ const divMaps = {
       telefone:'(16) 3621-2108',
       telefoneNumber:'tel:+551636212108',
       whatsapp_1:'(16) 99709-2489',
-      whatsapp_2:'(16) 99143-9381'
+      whatsapp_2:'(16) 99143-9381',
+      whatsapp_3:'(16) 99609-2935'
    }
 }
 
