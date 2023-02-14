@@ -10,9 +10,10 @@ telefone:string,
 telefoneNumber:string,
 whatsapp_1:string,
 whatsapp_2:string,
+whatsapp_3?:string
 }
 
-export function Maps({address, source, telefone, telefoneNumber, whatsapp_1, whatsapp_2}:MapsProps) { 
+export function Maps({address, source, telefone, telefoneNumber, whatsapp_1, whatsapp_2, whatsapp_3}:MapsProps) { 
    
 
    return (
