@@ -41,9 +41,6 @@ export function Budget() {
             whatsapp_1={divMaps.store_1.whatsapp_1} 
             whatsapp_2={divMaps.store_1.whatsapp_2}
                
-            whatsapp_1={divMaps.store_2.whatsapp_1}
-            whatsapp_2={divMaps.store_2.whatsapp_2}
-               
             whatsapp_1_number={divMaps.store_2.whatsapp_1_number}
             whatsapp_2_number={divMaps.store_2.whatsapp_2_number}
             />
