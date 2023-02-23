@@ -21,7 +21,7 @@ const divMaps = {
       whatsapp_2:'(16) 99143-9381',
       whatsapp_3:'(16) 99609-2935',
       whatsapp_1_number:'5516997092489',
-      whatsapp_2_number:'5516991439381',,
+      whatsapp_2_number:'5516991439381',
       whatsapp_3_number:'5516996092935'
    }
 }
