@@ -10,10 +10,13 @@ telefone:string,
 telefoneNumber:string,
 whatsapp_1:string,
 whatsapp_2:string,
-whatsapp_3?:string
+whatsapp_3?:string,
+whatsapp_1_number:string,
+whatsapp_2_number:string,
+whatsapp_3_number?:string
 }
 
-export function Maps({address, source, telefone, telefoneNumber, whatsapp_1, whatsapp_2, whatsapp_3}:MapsProps) { 
+export function Maps({address, source, telefone, telefoneNumber, whatsapp_1, whatsapp_2, whatsapp_3, whatsapp_1_number, whatsapp_2_number, whatsapp_3_number}:MapsProps) { 
    
 
    return (
@@ -39,11 +42,11 @@ export function Maps({address, source, telefone, telefoneNumber, whatsapp_1, wha
                      { whatsapp_1 == '0'?
                       ""
                       :
-                     <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_1}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_1} </Text> </Link> </HStack>
+                     <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_1_number}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_1} </Text> </Link> </HStack>
                      }
-                     <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_2}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_2} </Text> </Link> </HStack>
+                     <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_2_number}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_2} </Text> </Link> </HStack>
                      { whatsapp_3?
-                     <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_3}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_3} </Text> </Link> </HStack>
+                     <HStack w='100%' justify='center'> <Link  _hover={{color:'lindacorCyan', transition:'200ms'}} href={`https://wa.me/${whatsapp_3_number}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_3} </Text> </Link> </HStack>
                         :
                      ""
                      }
