@@ -17,9 +17,9 @@ const divMaps = {
       source:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.8928401992703!2d-47.824566185441675!3d-21.19641548440527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bec08620d2d5%3A0x6fa495639a52a700!2sAv.%20Caramuru%2C%202055%20-%202%20-%20Jardim%20Sumare%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014025-303!5e0!3m2!1spt-BR!2sbr!4v1648817586786!5m2!1spt-BR!2sbr",
       telefone:'(16) 3621-2108',
       telefoneNumber:'tel:+551636212108',
-      whatsapp_1:'',
+      whatsapp_1:'0',
       whatsapp_2:'(16) 99143-9381',
-      whatsapp_3:'(16) 99609-2935',
+      whatsapp_3:'0',
       whatsapp_1_number:'0',
       whatsapp_2_number:'5516991439381',
       whatsapp_3_number:'5516996092935'
@@ -34,7 +34,7 @@ export function Budget() {
          <Heading mx='auto' w='100%' textAlign='center' color='white' fontWeight='400' p={4}>CONHEÇA NOSSAS LOJAS</Heading>
          <Grid templateColumns='repeat(12, 1fr)' gap={6} color='datBlue' fontWeight='500' alignItems={'flex-start'}>
             <Maps 
-            address={divMaps.store_1.address} 
+            address={divMaps.store_1.address}
             source={divMaps.store_1.source}
             telefone={divMaps.store_1.telefone}
             telefoneNumber={divMaps.store_1.telefoneNumber}
