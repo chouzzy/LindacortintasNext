@@ -2,6 +2,7 @@ import { useDisclosure, Box, Button, Collapse, useBreakpointValue, Grid, GridIte
 import { useEffect, useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 import { ImFacebook2 } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
 
 import { RiWhatsappFill, RiMenuLine } from "react-icons/ri";
 import { SiLinkedin } from "react-icons/si";
@@ -25,6 +26,7 @@ export function ModalMenu(ModalMenuProps) {
    }, [])
 
    let socialMediaLinks = {
+      'email':'mailto:atendimento@lindacortintas.com.br?subject=Contato via site Lindacor Tintas&cc=julia.maschio@hotmail.com',
       'instagram':'https://www.instagram.com/lindacortintas/',
       'facebook':'https://www.facebook.com/Lindacor-Tintas-104622232176385',
       'linkedin':'https://www.linkedin.com/company/lindacor-tintas/',
@@ -50,6 +52,7 @@ export function ModalMenu(ModalMenuProps) {
                      )
                   })}
                   <HStack p={2} fontSize='1.6rem' spacing={3} textAlign='center' borderTop='1px solid #b8d432' w='36vw' justifyContent='center'>
+                        <SocialMedia mediaColor='#ffbc1c' icon={<MdEmail/>} mediaLink={socialMediaLinks.email}/>
                         <SocialMedia mediaColor='#E1306C' icon={<BsInstagram/>} mediaLink={socialMediaLinks.instagram}/>
                         <SocialMedia mediaColor='#4267B2' icon={<ImFacebook2/>} mediaLink={socialMediaLinks.facebook}/>
                         <SocialMedia mediaColor='#4267B2' icon={<SiLinkedin/>} mediaLink={socialMediaLinks.linkedin}/>

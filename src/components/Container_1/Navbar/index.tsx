@@ -6,6 +6,7 @@ import { SiLinkedin } from "react-icons/si";
 import { NavItem } from "./NavItem";
 import { useState, useEffect } from "react";
 import { ImFacebook2 } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
 
 export function Navbar() {
    const [whatsNumber, setWhatsNumber] = useState('')
@@ -37,6 +38,7 @@ export function Navbar() {
    {id:'#contatos', text:'Contatos'}]
 
    let socialMediaLinks = {
+      'email':'mailto:atendimento@lindacortintas.com.br?subject=Contato via site Lindacor Tintas&cc=julia.maschio@hotmail.com',
       'instagram':'https://www.instagram.com/lindacortintas/',
       'facebook':'https://www.facebook.com/Lindacor-Tintas-104622232176385',
       'linkedin':'https://www.linkedin.com/company/lindacor-tintas/',
@@ -80,6 +82,7 @@ export function Navbar() {
 
             <GridItem colStart={[10,10,10,11,11]} colEnd={13}>
                <HStack justifyContent='center' alignItems='baseline' spacing={2} fontSize='1.5rem' color='datBlue'>
+                  <Link _hover={{color: "#eed150"}} href={socialMediaLinks.email}> <MdEmail/> </Link>
                   <Link _hover={{color: "#eed150"}} href={socialMediaLinks.instagram}> <BsInstagram /> </Link>
                   <Link _hover={{color: "#eed150"}} href={socialMediaLinks.facebook}> <ImFacebook2/> </Link>
                   <Link  _hover={{color: "#eed150"}} href={socialMediaLinks.linkedin}> <SiLinkedin/> </Link>
