@@ -17,9 +17,10 @@ export function Banner() {
    })
 
    const lines = [
-      {id:1,image: 'static/img/banner-1.png', text:'Sensação de casa nova', subText:'Tire os planos do papel e os coloque na parede'},
-      {id:2,image: 'static/img/banner-2.png', text:'Tintas de excelente qualidade', subText:'Aqui você encontra as melhores marcas e ótimos preços!'},
-      {id:3,image: 'static/img/banner-3.png', text:'Sua casa como você imagina', subText:'Mas se não pintar nenhuma ideia, nós ajudamos você :)'},
+      {id:1,image: 'static/img/valentines.png', text:'', subText:''},
+      {id:2,image: 'static/img/banner-1.png', text:'Sensação de casa nova', subText:'Tire os planos do papel e os coloque na parede'},
+      {id:3,image: 'static/img/banner-2.png', text:'Tintas de excelente qualidade', subText:'Aqui você encontra as melhores marcas e ótimos preços!'},
+      {id:4,image: 'static/img/banner-3.png', text:'Sua casa como você imagina', subText:'Mas se não pintar nenhuma ideia, nós ajudamos você :)'},
    ]
    return (
       <>
@@ -32,6 +33,7 @@ export function Banner() {
             slidesPerView={slides}
             navigation
             autoplay
+            speed={1200}
             loop
             // onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
