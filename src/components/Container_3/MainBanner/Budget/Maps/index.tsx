@@ -44,7 +44,11 @@ export function Maps({ address, source, telefone, telefoneNumber, whatsapp_1, wh
                         :
                         <HStack w='100%' justify='center'> <Link _hover={{ color: 'lindacorCyan', transition: '200ms' }} href={`https://wa.me/${whatsapp_1_number}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_1} </Text> </Link> </HStack>
                      }
-                     <HStack w='100%' justify='center'> <Link _hover={{ color: 'lindacorCyan', transition: '200ms' }} href={`https://wa.me/${whatsapp_2_number}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_2} </Text> </Link> </HStack>
+                     {whatsapp_2 == '0' ?
+                        ""
+                        :
+                        <HStack w='100%' justify='center'> <Link _hover={{ color: 'lindacorCyan', transition: '200ms' }} href={`https://wa.me/${whatsapp_2_number}?text=Olá, tudo bem? Acessei o site da lindacor e gostaria de falar com um atendente.`} target={"_blank"} className="zap-links"> <Text> {whatsapp_2} </Text> </Link> </HStack>
+                     }
                      {whatsapp_3 == '0' ?
                         ""
                         :
