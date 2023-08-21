@@ -1,5 +1,6 @@
 import { Box, Flex, GridItem, Heading, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay} from 'swiper'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -24,6 +25,8 @@ export function Banner() {
       xl: false
    })
 
+   SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay])
+
    const lines = [
       // { id: 1, image: 'static/img/banner-cinema.png', text: '', subText: '' },
       { id: 2, image: 'static/img/banner-1.png', text: 'Sensação de casa nova', subText: 'Tire os planos do papel e os coloque na parede' },
@@ -47,8 +50,9 @@ export function Banner() {
                      slidesPerView={slides}
                      speed={1200}
                      loop
+                     autoplay
                      // onSlideChange={() => console.log('slide change')}
-                     onSwiper={(swiper) => console.log(swiper)}
+                     // onSwiper={(swiper) => console.log(swiper)}
                   >
 
                      {isMobile ?
@@ -60,7 +64,8 @@ export function Banner() {
                         :
                         lines.map(item => {
                            return (
-                              <SwiperSlide key={item.id}>
+                              <SwiperSlide key={item.id}
+                              >
                                  <LineItem image={item.image} text={item.text} subText={item.subText} />
                               </SwiperSlide>
                            )
