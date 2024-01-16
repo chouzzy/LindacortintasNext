@@ -20,6 +20,7 @@ const parcialService = <>O cliente tem a possibilidade de <b>terceirizar</b> alg
 export function Stores() {
    
    const [whatsNumber, setWhatsNumber] = useState('')
+   
    useEffect(() => {
       const fetchWhatsNumber = async () => {
          await fetch('/api/random', {method:'get'})
@@ -32,12 +33,24 @@ export function Stores() {
       fetchWhatsNumber()
    }, [])
 
+   const [telefoneNumber, setTelefoneNumber] = useState('')
+   useEffect(() => {
+      const fetchWhatsNumber = async () => {
+         await fetch('/api/randomTelefone', {method:'get'})
+         .then(response => response.json())
+         .then(data => {
+            setTelefoneNumber(data.number)
+         })
+      }
+      fetchWhatsNumber()
+   }, [])
+
    let socialMediaLinks = {
       'instagram':'https://www.instagram.com/lindacortintas/',
       'facebook':'https://www.facebook.com/Lindacor-Tintas-104622232176385',
       'linkedin':'https://www.linkedin.com/company/lindacor-tintas/',
       'whatsapp':`https://wa.me/${whatsNumber}?text=Olá, tudo bem? Acessei o site da Lindacor e gostaria de falar com um atendente.`,
-      'telefone':`tel:+551636372108`
+      'telefone':`tel:+${telefoneNumber}`
    }
 
    return (
