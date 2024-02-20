@@ -24,26 +24,6 @@ export function ModalProjectTypes(Props) {
                </Button>
 
             </GridItem>
-
-            <Collapse in={Props.modal.isOpen}>
-               <Box  w={['100%','100%','40vw','28vw']} mx='auto' mt={8}>
-                  {Props.list?
-                  ''
-                  :
-                  <Box p={6}>
-                     <Lottie options={defaultOptions} cursor='none' />
-                  </Box>
-                  }
-                     <List spacing={2} my={8} px={[8,8,4,8]} justifyContent='center' textAlign='left'>
-                     {Props.list?.map( item => {
-                        return (
-                           <ServiceListItem key={item.text} text={item.text}/>
-                        )
-                     })
-                     }
-                     </List>
-               </Box>
-            </Collapse >
          </Grid>
       </>
    )

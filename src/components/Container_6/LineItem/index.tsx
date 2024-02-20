@@ -1,5 +1,4 @@
 import { Box, Flex, SimpleGrid, GridItem, Heading, Image, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
-import Lottie from 'react-lottie'
 
 interface LineItemProps {
    LineImage:string,

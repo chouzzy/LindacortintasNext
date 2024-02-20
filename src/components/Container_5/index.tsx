@@ -1,6 +1,5 @@
 import { Box, Flex, SimpleGrid, GridItem, Heading, Image, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
 import animationData from '../../../public/animations/painter.json';
-import Lottie from 'react-lottie'
 import { LineItem } from "./LineItem";
 
 export function Container_5() { 
