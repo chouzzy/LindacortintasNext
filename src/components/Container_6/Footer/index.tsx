@@ -16,7 +16,7 @@ interface FooterProps {
 }
 
 export function Footer({ media }: FooterProps) {
-   const emailLink = 'mailto:atendimento@lindacortintas.com.br?subject=Contato via site Lindacor Tintas&cc=julia.maschio@hotmail.com' 
+   const emailLink = 'mailto:atendimento@lindacortintas.com.br?subject=Contato via site Lindacor Tintas' 
    return (
       <>
          <Grid
