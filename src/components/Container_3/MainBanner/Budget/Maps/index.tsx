@@ -27,13 +27,17 @@ export function Maps({ address, source, telefone, telefoneNumber, whatsapp_1, wh
             <Flex w='100%'>
                <Flex w='100%'>
                   <VStack w='100%' justify='center'>
-                     <Link className="liga-tag" href={telefoneNumber} _hover={{ color: 'lindacorCyan', transition: '200ms' }}>
-                        <Flex w='100%' justifyContent={'center'}>
-                           <MdCall fontSize='2rem' color='lindacorBlue' />
-                        </Flex>
+                     {telefone == '0' ?
+                        ""
+                        :
+                        <Link className="liga-tag" href={telefoneNumber} _hover={{ color: 'lindacorCyan', transition: '200ms' }}>
+                           <Flex w='100%' justifyContent={'center'}>
+                              <MdCall fontSize='2rem' color='lindacorBlue' />
+                           </Flex>
 
-                        <Text> {telefone} </Text>
-                     </Link>
+                           <Text> {telefone} </Text>
+                        </Link>
+                     }
                   </VStack>
                </Flex>
                <Flex w='100%' justify='center'>
