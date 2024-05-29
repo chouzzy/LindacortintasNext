@@ -9,9 +9,9 @@ const divMaps = {
       telefone:'(16) 3637-2108',
       telefoneNumber:'tel:+551636372108',
       whatsapp_1:'',
-      whatsapp_2:'(16) 99709-7415',
+      whatsapp_2:'',
       whatsapp_1_number:'',
-      whatsapp_2_number:'5516997097415'
+      whatsapp_2_number:''
    },
    store_2:{
       address:"🚩 LOJA 2: Av. Caramuru, 2055 - Jardim Sumare",
