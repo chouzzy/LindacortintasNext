@@ -2426,7 +2426,7 @@ __metadata:
     react: 18.0.0
     react-dom: 18.0.0
     react-facebook-pixel: ^1.0.4
-    react-hook-form: ^7.31.1
+    react-hook-form: ^7.53.0
     react-icons: ^4.4.0
     react-lottie: ^1.2.4
     react-scroll: ^1.8.7
@@ -3480,12 +3480,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:^7.31.1":
-  version: 7.31.1
-  resolution: "react-hook-form@npm:7.31.1"
+"react-hook-form@npm:^7.53.0":
+  version: 7.53.0
+  resolution: "react-hook-form@npm:7.53.0"
   peerDependencies:
-    react: ^16.8.0 || ^17 || ^18
-  checksum: c387f81f0a740b610a601e06e148fce1abd466d353c9a5fd05253644d47270b69c8a0278cdc0f28a3adf5bef2c510adb4bcf37269892dc596750af8e8d062fb1
+    react: ^16.8.0 || ^17 || ^18 || ^19
+  checksum: 84d67fb79bad03d0aa809b5e411d97fb081fc13cd2b6d063a988f81f6fbef8545463e05360afa9d8d58fff19f08fa919930dcdc98a9e68bf74048c9f63e10ad5
   languageName: node
   linkType: hard
 
