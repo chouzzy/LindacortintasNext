@@ -38,7 +38,7 @@ export function Navbar() {
    {id:'#contatos', text:'Contatos'}]
 
    let socialMediaLinks = {
-      'email':'mailto:atendimento@lindacortintas.com.br?subject=Contato via site Lindacor Tintas',
+      'email':'mailto:atendimento@lindacortintas.com.br?subject=Contato via site Lindacor Tintas&cc=vendas2caramuru@lindacortintas.com.br',
       'instagram':'https://www.instagram.com/lindacortintas/',
       'facebook':'https://www.facebook.com/Lindacor-Tintas-104622232176385',
       'linkedin':'https://www.linkedin.com/company/lindacor-tintas/',
