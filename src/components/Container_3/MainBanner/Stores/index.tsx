@@ -1,6 +1,7 @@
 import { Button, Flex, Grid, GridItem, HStack, Image, Link, SimpleGrid, Text, useDisclosure, VStack } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { ModalProjectTypes } from "./ModalProjectTypes";
+import { useRouter } from "next/router";
 
 const fullServiceList = [
    { text: 'Desenvolvimento da fórmula' },
@@ -53,6 +54,24 @@ export function Stores() {
       'telefone': `tel:+${telefoneNumber}`
    }
 
+
+   const router = useRouter();
+   const path = router.pathname; // Obtém o path da URL atual
+
+   let headline: string;
+   if (path === '/lojadetintas') {
+      headline = 'A loja de tintas com os melhores produtos, preços do mercado e uma entrega rápida e grátis!';
+   }
+   if (path === '/casadetintas') {
+      headline = 'A casa de tintas com os melhores produtos, preços do mercado e uma entrega rápida e grátis!';
+   }
+   if (path === '/institucional') {
+      headline = 'Conheça a Lindacor Tintas, a loja de tintas de Ribeirão com os melhores produtos e preços do mercado!'; // Define um título padrão caso o path não seja nenhum dos dois
+   }
+   if (path === '/') {
+      headline = 'Compre suas tintas em Ribeirão Preto com os melhores preços do mercado e uma entrega rápida e grátis!'
+   }
+
    return (
       <GridItem id='#orçamento' colSpan={12} w='100%' h='100%' p={[1, 4, 4, 8]} bgSize='initial' bgRepeat={'repeat-x'} bgPosition={'top'} bgColor='white' bgImage='static/img/roll.png'>
 
@@ -68,8 +87,9 @@ export function Stores() {
 
          </Flex>
          <Flex w='100%' alignItems='center' justifyContent={'center'} mt={4}>
+            { }
             <Text fontSize={['2.2rem', '2.5rem', '2.5rem', '4rem', '4rem']} px={4} lineHeight={1.2} color="orange.300" fontWeight={'bold'} textAlign='center'>
-            A loja de tintas com os melhores produtos e preços do mercado!
+              {headline}
             </Text>
          </Flex>
 
