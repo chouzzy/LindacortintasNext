@@ -60,10 +60,10 @@ export function Stores() {
 
    let headline: string;
    if (path === '/lojadetintas') {
-      headline = 'A loja de tintas com os melhores produtos, preços do mercado e uma entrega rápida e grátis!';
+      headline = 'A loja de tintas em Ribeirão Preto com os melhores produtos, preços do mercado e uma entrega rápida e grátis.';
    }
    if (path === '/casadetintas') {
-      headline = 'A casa de tintas com os melhores produtos, preços do mercado e uma entrega rápida e grátis!';
+      headline = 'A casa de tinta em Ribeirão Preto com os melhores produtos, preços do mercado e uma entrega rápida e grátis.';
    }
    if (path === '/institucional') {
       headline = 'Conheça a Lindacor Tintas, a loja de tintas de Ribeirão com os melhores produtos e preços do mercado!'; // Define um título padrão caso o path não seja nenhum dos dois
