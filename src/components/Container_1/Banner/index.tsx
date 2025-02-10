@@ -1,6 +1,6 @@
 import { Box, Flex, GridItem, Heading, Text, useBreakpointValue, VStack } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore from 'swiper'
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
