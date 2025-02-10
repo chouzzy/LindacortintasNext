@@ -1,13 +1,9 @@
 import { Flex, Grid, Image, Text } from "@chakra-ui/react";
-import { SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay} from 'swiper'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
-
-SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay ])
 
 export function LineItem(LineItemProps) {
    return (
