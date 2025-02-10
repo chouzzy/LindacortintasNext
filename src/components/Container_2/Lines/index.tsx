@@ -1,12 +1,11 @@
 import { Grid, Image, Text, VStack } from "@chakra-ui/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay} from 'swiper'
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay ])
 export function Lines() {
    const vantagensIcons = [
       {text:'Ótimos preços e as melhores condições pra você fechar negócio.', image:'static/img/money-icon.png', alt:'Icone de promoção de preços'},
