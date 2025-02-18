@@ -88,7 +88,7 @@ export function Stores() {
          </Flex>
          <Flex w='100%' alignItems='center' justifyContent={'center'} mt={4}>
             { }
-            <Text fontSize={['2.2rem', '2.5rem', '2.5rem', '4rem', '4rem']} px={4} lineHeight={1.2} color="orange.300" fontWeight={'bold'} textAlign='center'>
+            <Text fontSize={['2rem', '2.25rem', '2.5rem', '4rem', '4rem']} px={4} lineHeight={1.2} color="orange.300" fontWeight={'bold'} textAlign='center'>
               {headline}
             </Text>
          </Flex>
