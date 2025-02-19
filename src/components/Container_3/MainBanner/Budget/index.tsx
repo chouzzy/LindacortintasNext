@@ -20,10 +20,10 @@ const divMaps = {
       telefoneNumber:'tel:+551636212108',
       whatsapp_1:'(16) 99709-2489',
       whatsapp_2:'(16) 99609-2935',
-      whatsapp_3:'(16) 99143-9381',
+      whatsapp_3:'',
       whatsapp_1_number:'5516997092489',
       whatsapp_2_number:'5516996092935',
-      whatsapp_3_number:'5516991439381'
+      whatsapp_3_number:''
    }
 }
 
