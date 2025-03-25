@@ -94,7 +94,7 @@ export function Stores() {
          <Flex w='100%' alignItems='center' justifyContent={'center'} mt={4}>
             { }
             <Text fontSize={['2rem', '2.25rem', '2.5rem', '4rem', '4rem']} px={4} lineHeight={1.2} color="orange.300" fontWeight={'bold'} textAlign='center'>
-              {headline}
+               {headline}
             </Text>
          </Flex>
 
@@ -103,14 +103,26 @@ export function Stores() {
             <GridItem textAlign={['center', 'center', 'center', 'left', 'left']} colSpan={[12, 12, 12, 6, 5]}>
                <Flex h='100%' alignItems={'center'}>
                   <Flex mx='auto' flexDir={'column'} gap={4}>
-                     <Text
-                        fontSize={['1.5rem', '1.5rem', '3.8rem', '4.8rem']}
-                        color='lindacorBlue'
-                        fontWeight='500'
-                        textAlign='center'
-                     >
-                        {title}
-                     </Text>
+                     {path === '/industrial' ?
+                        <Text
+                           fontSize={[24, 24, 32, 48]}
+                           color='lindacorBlue'
+                           fontWeight='500'
+                           textAlign='center'
+                        >
+                           {title}
+                        </Text>
+                        :
+
+                        <Text
+                           fontSize={['1.5rem', '1.5rem', '3.8rem', '4.8rem']}
+                           color='lindacorBlue'
+                           fontWeight='500'
+                           textAlign='center'
+                        >
+                           {title}
+                        </Text>  
+                     }
 
                      <Flex flexDir={['column', 'row', 'row', 'row']} w='100%' gap={[4, 0, 0, 0]}>
 

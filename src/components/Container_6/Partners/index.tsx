@@ -47,7 +47,7 @@ export function Partners() {
       //    })}
       // </SimpleGrid>
       <Flex maxW={'100%'} alignContent={'center'} justifyContent={'center'}>
-         <Flex maxWidth={[300, 300, 720, 960, '1920px']} my='auto' >
+         <Flex maxWidth={['90vw', '90vw', '90vw', '90vw', '90vw']} my='auto' >
             {/* SWIPER */}
             <Swiper
                modules={[Navigation, Pagination, Scrollbar, A11y]}
