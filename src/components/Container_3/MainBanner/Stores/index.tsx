@@ -14,7 +14,7 @@ const fullServiceList = [
    { text: 'Desenv. da arte para as embalagens' },
    { text: 'Criação da identidade visual' },
 ]
-const title = <>Solicite já seu orçamento!</>
+// const title = <>Solicite já seu orçamento!</>
 const fullService = <>Te auxiliamos em <b>todas</b> as etapas da criação do seu cosmético</>
 const parcialService = <>O cliente tem a possibilidade de <b>terceirizar</b> algumas etapas do processo</>
 
@@ -58,6 +58,7 @@ export function Stores() {
    const router = useRouter();
    const path = router.pathname; // Obtém o path da URL atual
 
+   let title = 'Solicite já seu orçamento!'
    let headline: string;
    if (path === '/lojadetintas') {
       headline = 'A loja de tintas em Ribeirão Preto com os melhores produtos, preços do mercado e uma entrega rápida e grátis.';
@@ -67,6 +68,10 @@ export function Stores() {
    }
    if (path === '/institucional') {
       headline = 'Conheça a Lindacor Tintas, a loja de tintas de Ribeirão com os melhores produtos e preços do mercado!'; // Define um título padrão caso o path não seja nenhum dos dois
+   }
+   if (path === '/industrial') {
+      headline = 'A loja de tintas industriais em Ribeirão Preto com os melhores produtos, preços do mercado e uma entrega rápida e grátis!'; // Define um título padrão caso o path não seja nenhum dos dois
+      title = 'Compre já suas tintas epóxi, tintas para piso, tintas industriais e tintas de demarcação viária e muito mais!'
    }
    if (path === '/') {
       headline = 'Compre suas tintas em Ribeirão Preto com os melhores preços do mercado e uma entrega rápida e grátis!'
